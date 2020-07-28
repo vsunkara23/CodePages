@@ -2,9 +2,8 @@
 
 Running Program:
 
-    $ npm install -g browser-sync
-    $ npm run dev 
-    $ npm run ui on another terminal window (launches http://localhost:3000/page/Main_Page)
+    $ npm install 
+    $ node index.js
    
 
 Libraries/Npm Modules Used:
