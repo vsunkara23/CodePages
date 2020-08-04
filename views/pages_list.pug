@@ -1,0 +1,25 @@
+extends layout
+
+block layout-content
+    div.Banner
+      a(href="/page/Main_Page" style="text-decoration: none;") 
+        h3.corner-title CodePages
+      div.search-area
+        form(action="/search", method="get")
+            input(type="search" class="search-field" placeholder="Search" name="q" id="page_search")
+            button(type="submit" class="search-btn") Search
+    if bool_value
+        div(class="container" style="margin-top:50px;")
+            h3 All Pages
+            div.row
+                div(class="col-sm" style="margin-top:50px;") 
+                        each val, index in title_list
+                            a(href="/page/"+page_list[index].page_path style="color:dodgerblue; text-transform: inherit;font-size:25px")= val.title
+                            | <br>
+                            | <br>
+    else                                                       
+        div(class="container" style="margin-top:50px;")
+            h3 No Existing Pages...
+
+                
+                

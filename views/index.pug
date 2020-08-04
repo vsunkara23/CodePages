@@ -1,0 +1,65 @@
+extends layout
+
+block layout-content
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js")
+    div.Banner
+      a(href="/page/Main_Page" style="text-decoration: none;") 
+        h3.corner-title CodePages
+      div.search-area
+        form(action="/search", method="get")
+            input(type="search" class="search-field" placeholder="Search" name="q" id="page_search")
+            button(type="submit" class="search-btn") Search
+    if bool_value  
+      div(class="container wrapper" id="content_stuff")
+        div.row
+          div.col-sm
+            h1.title= main_titleobj.title
+          div.col-sm
+          
+          div(class="col-sm" style="padding-top: 35px;")
+            - var url_edit = "/page/" + id + "/edit"
+            - var url_history = "/page/" + id + "/history"
+            //- - var url_pages = "/pages"
+            //- a(href=url_pages class="pages-link") Pages
+            a(href=url_edit class="edit-link") Edit Page
+            a(href=url_history class="history-link") View History
+        div.row
+          div.col-sm
+            - var html_content = main_page_content.content
+            if html_content
+              div.content_area !{html_content}
+                script.
+                  var x = document.getElementsByTagName("a");
+                  count = 1;
+                  //- x[count]
+                  for (var i = 3; i<x.length;i++) {
+                    var path_exists = x[i].href;
+                    x[i].style.color = "dodgerblue";
+                    $.get(path_exists, function(data) {
+                      var $result = $(data).find('#non_exist');
+                      count = count + 1;
+                      if ($result.length) {
+                        x[count].style.color = "red";
+                      }
+                    });  
+                  }
+    else
+      div(class="container wrapper" id="content_stuff")
+        div.row
+          div.col-sm
+            if main_titleobj.title
+              p= main_titleobj.title
+            else
+              - var url_string = page_title
+              h1.title #{url_string}
+          div.col-sm
+          
+          div(class="col-sm" style="padding-top: 35px;")
+            - var url_edit = "/page/" + id + "/edit"
+            a(href=url_edit class="edit-link") Edit Page
+        div.row
+          div(class="card" id="non_exist" style="background-color:#bbd1e3;width:900px;height:50px;margin-top:20px;") 
+            p(style="margin-top:15px;") This page doesn't exist yet.
+      

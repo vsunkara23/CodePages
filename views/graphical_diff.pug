@@ -1,0 +1,29 @@
+extends layout
+
+block layout-content
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css")
+    script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html.min.js")
+    div.Banner
+      a(href="/page/Main_Page" style="text-decoration: none;") 
+        h3.corner-title CodePages
+      div.search-area
+        form(action="/search", method="get")
+            input(type="search" class="search-field" placeholder="Search" name="q" id="page_search")
+            button(type="submit" class="search-btn") Search
+    if original
+        div(class="container" style="margin-top:50px;")
+            div.row
+                div(class="col-sm" style="margin-left:-14px;") 
+                    - var time_string = "Edit at " + time_list[index_edit].creation_time
+                    h3= time_string
+            div(class="row" style="margin-top:50px;")   
+                div(id="destination") !{diffHtml}
+    else
+        div(class="container" style="margin-top:50px;")
+            div.row
+                div(class="col-sm" style="margin-left:-14px;") 
+                    - var time_string = "Edit at " + time_list[index_edit].creation_time
+                    h3= time_string
+            div(class="row" style="margin-top:50px;") 
+                div(id="destination") !{diffHtml}
+                

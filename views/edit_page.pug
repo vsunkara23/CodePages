@@ -1,0 +1,38 @@
+extends layout
+
+block layout-content
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js")
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js")
+    script(src="/script.js")
+    - var html_content = main_page_content.content
+    div.Banner
+      a(href="/page/Main_Page" style="text-decoration: none;") 
+        h3.corner-title CodePages
+    div.search-area
+        form(action="/search", method="get")
+            input(type="search" class="search-field" placeholder="Search" name="q" id="page_search")
+            button(type="submit" class="search-btn") Search
+    -var url_string='/page/' + id
+    form(action=url_string, method="post", id="confirmation")
+        div.container
+            div.row
+                div.col-sm
+                    h3(style="padding-top:25px;text-transform:inherit;margin-left:-50px;") Title:
+                div.col-sm
+                    input(type="text" style="margin-top:28px;height: 37px;" class="input-group input-group-lg" name="title_info" value=main_titleobj.title)
+                div.col-sm
+                    input(type="submit", value="Save" class="btn btn-primary" id="save_button" style="margin-left: 100px; margin-top : 20px;") 
+                    a(href=url_string class="btn btn-md active" style="margin-left: 15px; margin-top : 20px;") Cancel
+            div.row        
+                div.col-sm  
+                    h3(style="padding-top:50px;text-transform:inherit;margin-left:-50px") Describe the change: 
+                div.col-sm
+                    input(type="text" style="margin-top:50px;height:37px;" class="input-group input-group-lg" name="change_info" value=main_changelog.change_info)
+                div.col-sm
+        div(class="container" style="margin-top:50px;")
+            div.row
+                div.col-sm
+                    textarea(class="col-md-6 blue-border" style="margin-left:-50px;" id="pad" name="data" form="confirmation")= main_page_content.content
+                div.col-sm
+                    div(class="col-md-6" id="markdown")
