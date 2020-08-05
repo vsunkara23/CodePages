@@ -21,8 +21,6 @@ block layout-content
           div(class="col-sm" style="padding-top: 35px;")
             - var url_edit = "/page/" + id + "/edit"
             - var url_history = "/page/" + id + "/history"
-            //- - var url_pages = "/pages"
-            //- a(href=url_pages class="pages-link") Pages
             a(href=url_edit class="edit-link") Edit Page
             a(href=url_history class="history-link") View History
         div.row
@@ -33,7 +31,6 @@ block layout-content
                 script.
                   var x = document.getElementsByTagName("a");
                   count = 1;
-                  //- x[count]
                   for (var i = 3; i<x.length;i++) {
                     var path_exists = x[i].href;
                     x[i].style.color = "dodgerblue";
@@ -60,6 +57,6 @@ block layout-content
             - var url_edit = "/page/" + id + "/edit"
             a(href=url_edit class="edit-link") Edit Page
         div.row
-          div(class="card" id="non_exist" style="background-color:#bbd1e3;width:900px;height:50px;margin-top:20px;") 
+          div(class="card" id="non_exist" style="background-color:rgba(255, 0, 0, 0.4);width:900px;height:50px;margin-top:20px;") 
             p(style="margin-top:15px;") This page doesn't exist yet.
       
