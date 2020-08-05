@@ -18,4 +18,5 @@ Libraries/Npm Modules Used:
 - [Browsersync]
 
 
-Deployed on aws EC2 @ http://ec2-3-101-54-71.us-west-1.compute.amazonaws.com:8000/page/Main_Page
+##### Deployed on aws EC2 
+@ http://ec2-3-101-54-71.us-west-1.compute.amazonaws.com:8000/page/Main_Page
