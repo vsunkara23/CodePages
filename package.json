@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "restart": "pm2 startOrRestart ecosystem.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "pm2": "^4.4.0"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
