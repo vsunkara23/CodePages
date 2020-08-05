@@ -10,7 +10,7 @@ in software.
     $ node index.js
    
 
-### Libraries/Npm Modules Used:
+### Javascript Libraries/Npm Modules Used:
 
 - [Markdown-it]
 - [FlexSearch.js]
@@ -22,6 +22,11 @@ in software.
 - [Browsersync]
 - [PM2]
 - [Nodemon]
+- [Highlight.js]
+
+### Key Technologies And Other Software Dependencies
+
+Node.js, Jquery, CSS3, HTML5, Bootstrap, SQLite3, AWS EC2, Github. 
 
 
 ##### Deployed on AWS EC2 
