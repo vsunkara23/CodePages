@@ -19,4 +19,4 @@ Libraries/Npm Modules Used:
 
 
 ##### Deployed on AWS EC2 
-@ http://ec2-3-101-54-71.us-west-1.compute.amazonaws.com:8000/page/Main_Page
+@ https://rb.gy/xxfwaq
