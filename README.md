@@ -28,12 +28,10 @@ in software.
 
 Node.js, Jquery, CSS3, HTML5, Bootstrap, SQLite3, AWS EC2, Github. 
 
-
-### Deployed on AWS EC2 
-@ https://rb.gy/xxfwaq
-
----
-
 ### Project Demo
 
 <a href="https://drive.google.com/file/d/16j01sl2JNz-_IXWSCIHTryQzC5Odplox/view"><img src="https://drive.google.com/uc?export=view&id=17hBolZVfgZbH6nOc6JqdshmKosL2Qt__" width="836"/></a>
+
+---
+### Deployed on AWS EC2 
+@ https://rb.gy/xxfwaq
