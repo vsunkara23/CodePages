@@ -29,7 +29,7 @@ in software.
 Node.js, Jquery, CSS3, HTML5, Bootstrap, SQLite3, AWS EC2, Github. 
 
 
-##### Deployed on AWS EC2 
+#### Deployed on AWS EC2 
 @ https://rb.gy/xxfwaq
 
 ---
