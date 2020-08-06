@@ -4,7 +4,7 @@ A Node.js wiki web application geared towards programmers to foster a community 
 developers who document code practices, software projects and the latest happenings 
 in software.
 
-##### Deployed on AWS EC2 
+##### Deployed to an AWS EC2 instance running on Ubuntu 16.04 LTS.
 @ https://rb.gy/xxfwaq
  
 ---
