@@ -6,7 +6,7 @@ in software.
 
 Features include full-text search of wiki pages, creating new pages, support for Markdown and HTML editing, a graphical diff viewer that shows changes between an edit and a previous edit, and a live preview that renders the applied markdown and html formatting to the text in real-time.   
 
-##### Deployed to an AWS EC2 instance running on Ubuntu 16.04 LTS.
+##### Deployed to an AWS EC2 instance running on Ubuntu 18.04.4 LTS.
 @ https://rb.gy/xxfwaq
  
 ---
