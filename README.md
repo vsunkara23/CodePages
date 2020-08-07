@@ -4,7 +4,7 @@ A Node.js wiki web application geared towards programmers to foster a community 
 developers who document code practices, software projects and the latest happenings 
 in software.
 
-Features include full-text search of wiki pages, creating new pages, support for Markdown and HTML editing, a graphical diff viewer that shows changes between an edit and a previous edit, and a live preview that renders the applied markdown and html formatting on text in real-time.   
+Features include full-text search of wiki pages, creating new pages, support for Markdown and HTML editing, a graphical diff viewer that shows changes between an edit and a previous edit, a live preview that renders the applied markdown and html formatting on text in real-time, and code highlighting that supports over 189 languages.   
 
 ##### Deployed to an AWS EC2 instance running on Ubuntu 18.04.4 LTS.
 @ https://rb.gy/xxfwaq
