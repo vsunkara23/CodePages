@@ -28,10 +28,11 @@ Features include full-text search of wiki pages, creating new pages, support for
 - [PM2]
 - [Nodemon]
 - [Highlight.js]
+- [Express.js]
 
 ### Key Technologies And Other Software Dependencies
 
-Node.js, Jquery, CSS3, HTML5, Bootstrap, SQLite3, AWS EC2, Github. 
+Node.js, Express.js, Jquery, CSS3, HTML5, Bootstrap, SQLite3, AWS EC2, Github. 
 
 ### Project Demo
 
