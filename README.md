@@ -1,6 +1,6 @@
 # CodePages
 
-A Node.js wiki web application geared towards programmers to foster a community of driven 
+A Node.js wiki web application geared towards programmers. Fostering a community of driven 
 developers who document code practices, software projects and the latest happenings 
 in software.
 
