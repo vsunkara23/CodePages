@@ -27,7 +27,7 @@
     "highlight.js": "^10.1.2",
     "html-pug-converter": "^3.0.0",
     "jquery": "^3.5.1",
-    "markdown-it": "^11.0.0",
+    "markdown-it": "^12.3.2",
     "marked": "^1.1.0",
     "pug": "^3.0.0",
     "showdown": "^1.9.1",
