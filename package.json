@@ -28,7 +28,7 @@
     "html-pug-converter": "^3.0.0",
     "jquery": "^3.5.1",
     "markdown-it": "^11.0.0",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "pug": "^3.0.0",
     "showdown": "^1.9.1",
     "sqlite3": "^4.2.0",
